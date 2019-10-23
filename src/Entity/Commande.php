@@ -64,9 +64,15 @@ class Commande
      */
     private $pu;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Lcommande", mappedBy="id_commande")
+     */
+    private $Id_produit;
+
     public function __construct()
     {
-        $this->id_produit = new ArrayCollection(); //tokony fafana
+        $this->id_produit = new ArrayCollection();
+        $this->Id_produit = new ArrayCollection(); //tokony fafana
     }
 
     public function getId(): ?int
