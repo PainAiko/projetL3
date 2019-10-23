@@ -64,6 +64,12 @@ class Produit
      */
     private $qte;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="produits")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $id_categorie;
+
     public function __construct()
     {
         $this->qte = new ArrayCollection();
@@ -194,6 +200,18 @@ class Produit
             $this->qte->removeElement($qte);
             $qte->removeIdProduit($this);
         }
+
+        return $this;
+    }
+
+    public function getIdCategorie(): ?Category
+    {
+        return $this->id_categorie;
+    }
+
+    public function setIdCategorie(?Category $id_categorie): self
+    {
+        $this->id_categorie = $id_categorie;
 
         return $this;
     }
