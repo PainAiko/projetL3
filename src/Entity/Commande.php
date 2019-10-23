@@ -66,7 +66,7 @@ class Commande
 
     public function __construct()
     {
-        $this->id_produit = new ArrayCollection();
+        $this->id_produit = new ArrayCollection(); //tokony fafana
     }
 
     public function getId(): ?int
