@@ -22,7 +22,7 @@ class FamilleController extends AbstractController
     }
 
      /**
-     * @Route("/", name="add")
+     * @Route("/addFamille", name="add")
      */
     public function add(Request $request)
     {
