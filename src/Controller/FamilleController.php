@@ -29,7 +29,8 @@ class FamilleController extends AbstractController
         $famille = new Famille();
 
         $form=$this->createFormBuilder($famille)
-            ->add('libelle',TextType::class,array('libelle' =>'description','required' =>false,'attr' =>array('class' =>'form-control')))
+            ->add('libelle',TextType::class,array('required' =>false,'attr'
+             =>array('class' =>'form-control')))
             ->add('Ajouter',SubmitType::class,array('label' => 'Create','attr' =>array('class' =>'btn btn-primary mt-3')))
             ->getForm();
            $form->handleRequest($request);
