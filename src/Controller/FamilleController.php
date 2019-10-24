@@ -29,8 +29,8 @@ class FamilleController extends AbstractController
         $famille = new Famille();
 
         $form=$this->createFormBuilder($famille)
-            ->add('libelle',TextType::class,array('required' =>false,'attr'
-             =>array('class' =>'form-control')))
+            ->add('libelle',TextType::class,array('label' =>'description','required' =>false,'attr'
+             =>array('class' =>'form-control','value' =>'')))
             ->add('Ajouter',SubmitType::class,array('label' => 'Create','attr' =>array('class' =>'btn btn-primary mt-3')))
             ->getForm();
            $form->handleRequest($request);
@@ -49,6 +49,6 @@ class FamilleController extends AbstractController
         }
         $familles = $this->getDoctrine()->getRepository(Famille::class)->findAll();
   return $this->render('famille/add.html.twig',
-                array( 'form' => $form->createView(),'famille'=>$familles ));
+                array( 'form' => $form->createView(),'familles'=>$familles ));
     }
 }

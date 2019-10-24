@@ -10,9 +10,31 @@
 
 <div class="example-wrapper">
      {{ form(form) }}
-    <ul>
-        <li>Your controller at <code><a href="{{ 'J:/GitHub/projetL3/src/Controller/FamilleController.php'|file_link(0) }}">src/Controller/FamilleController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'J:/GitHub/projetL3/templates/famille/index.html.twig'|file_link(0) }}">templates/famille/index.html.twig</a></code></li>
-    </ul>
+     {% if familles %}
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                        <th>title</th>
+                        <th>body</th>
+                        <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for famille in familles %}
+                        <tr>
+                            <td>{{famille.id}}</td>
+                            <td>{{ famille.libelle}}</td>
+                            <td>
+                               
+                            </td>
+                        </tr>
+
+                 {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p >aucune article</p>
+    {% endif %}
 </div>
 {% endblock %}
