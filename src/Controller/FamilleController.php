@@ -22,7 +22,7 @@ class FamilleController extends AbstractController
     }
 
      /**
-     * @Route("/addfamille", name="add")
+     * @Route("/", name="add")
      */
     public function add(Request $request)
     {
@@ -36,7 +36,7 @@ class FamilleController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             // $form->getData() holds the submitted values
             // but, the original `$task` variable has also been updated
-            $article = $form->getData();
+            $famille = $form->getData();
 
             // ... perform some action, such as saving the task to the database
             // for example, if Task is a Doctrine entity, save it!
@@ -44,9 +44,10 @@ class FamilleController extends AbstractController
              $entityManager->persist($famille);
              $entityManager->flush();
 
-            return $this->redirectToRoute('article_list');
+            //return $this->redirectToRoute('article_list');
         }
-
-        return $this->render('article/new.html.twig',array( 'form' => $form->createView()));
+        $familles = $this->getDoctrine()->getRepository(Famille::class)->findAll();
+  return $this->render('famille/add.html.twig',
+                array( 'form' => $form->createView(),'famille'=>$familles ));
     }
 }
