@@ -1,3 +1,22 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+Famille:
+  path: /
+  controller: App\Controller\::index
+  
+  Commande_add:
+    path: /add
+    Commande: App\Controller\StockController::add
+
+  Commande_show:
+    path: /show/{url};
+    controlller: App\Controller\StockController::show
+  commande_edit:
+    path: /edit/{id}
+    controller: App\Controller\StockController::edit
+    requirements:
+      id: '\d+'
+
+  Commande_remove:
+    path: /remove/{id}
+    controller: App\Controller\StockController::remove
+    requirements:
+      id: '\d+'
