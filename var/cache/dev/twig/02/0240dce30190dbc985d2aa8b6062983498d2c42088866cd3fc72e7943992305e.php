@@ -92,34 +92,35 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
             <tr>
                 <th>Id</th>
                 <th>Libelle</th>
+                
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         ";
-        // line 17
+        // line 18
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) || array_key_exists("categories", $context) ? $context["categories"] : (function () { throw new RuntimeError('Variable "categories" does not exist.', 17, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) || array_key_exists("categories", $context) ? $context["categories"] : (function () { throw new RuntimeError('Variable "categories" does not exist.', 18, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["categorie"]) {
-            // line 18
+            // line 19
             echo "            <tr>
                 <td>";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 19), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 20), "html", null, true);
             echo "</td>
                 <td>";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "libelle", [], "any", false, false, false, 20), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "libelle", [], "any", false, false, false, 21), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
-            // line 22
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_show", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 22)]), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_show", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 23)]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
-            // line 23
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 23)]), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 24)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -127,7 +128,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 27
+            // line 28
             echo "            <tr>
                 <td colspan=\"3\">no records found</td>
             </tr>
@@ -136,12 +137,12 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['categorie'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 31
+        // line 32
         echo "        </tbody>
     </table>
 
     <a href=\"";
-        // line 34
+        // line 35
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_new");
         echo "\">Create new</a>
 ";
@@ -165,7 +166,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
 
     public function getDebugInfo()
     {
-        return array (  145 => 34,  140 => 31,  131 => 27,  122 => 23,  118 => 22,  113 => 20,  109 => 19,  106 => 18,  101 => 17,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  146 => 35,  141 => 32,  132 => 28,  123 => 24,  119 => 23,  114 => 21,  110 => 20,  107 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -182,6 +183,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
             <tr>
                 <th>Id</th>
                 <th>Libelle</th>
+                
                 <th>actions</th>
             </tr>
         </thead>
@@ -205,6 +207,6 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
 
     <a href=\"{{ path('categorie_new') }}\">Create new</a>
 {% endblock %}
-", "categorie/index.html.twig", "J:\\GitHub\\gestionStock\\templates\\categorie\\index.html.twig");
+", "categorie/index.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\index.html.twig");
     }
 }
