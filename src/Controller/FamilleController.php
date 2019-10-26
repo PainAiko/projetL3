@@ -21,29 +21,17 @@ class FamilleController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/delfamille/{id}", name="del_famille")
-     */
-    public function del_famille($id=null)
-    {
-        $famille= $this->getDoctrine()->getRepository(Famille::class)->find($id);
-        $em = $this->getDoctrine()->getManager();
-        $em->remove($famille);
-        $em->flush();
-        return $this->redirectToRoute('addf');
-    }
-
      /**
-     * @Route("/addFamille", name="addf")
+     * @Route("/addFamille", name="add")
      */
     public function add(Request $request)
     {
         $famille = new Famille();
 
         $form=$this->createFormBuilder($famille)
-            ->add('libelle',TextType::class,array('label' =>'description','required' =>true,'attr'
+            ->add('libelle',TextType::class,array('label' =>'description','required' =>false,'attr'
              =>array('class' =>'form-control','value' =>'')))
-            ->add('Ajouter',SubmitType::class,array('label' => 'Ajouter','attr' =>array('class' =>'btn btn-primary mt-3')))
+            ->add('Ajouter',SubmitType::class,array('label' => 'Create','attr' =>array('class' =>'btn btn-primary mt-3')))
             ->getForm();
            $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {

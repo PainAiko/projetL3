@@ -24,10 +24,9 @@
                 {% for famille in familles %}
                         <tr>
                             <td>{{famille.id}}</td>
-                            <td>{{famille.libelle}}</td>
+                            <td>{{ famille.libelle}}</td>
                             <td>
-                                 <a href="{{path('del_famille',{'id':famille.id})}}" 
-                                 class="btn btn-danger del">Delete</a>
+                               
                             </td>
                         </tr>
 
