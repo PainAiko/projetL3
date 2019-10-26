@@ -33,6 +33,12 @@ class Client
      */
     private $commandes;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Auth", inversedBy="client")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $auth;
+
     public function __construct()
     {
         $this->commandes = new ArrayCollection();
@@ -94,6 +100,18 @@ class Client
                 $commande->setIdClient(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getAuth(): ?Auth
+    {
+        return $this->auth;
+    }
+
+    public function setAuth(?Auth $auth): self
+    {
+        $this->auth = $auth;
 
         return $this;
     }

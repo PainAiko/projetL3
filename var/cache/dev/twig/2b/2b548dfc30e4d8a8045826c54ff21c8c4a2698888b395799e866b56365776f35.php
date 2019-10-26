@@ -237,6 +237,6 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
 
     <a href=\"{{ path('client_new') }}\">Create new</a>
 {% endblock %}
-", "client/index.html.twig", "J:\\GitHub\\gestionStock\\templates\\client\\index.html.twig");
+", "client/index.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\index.html.twig");
     }
 }

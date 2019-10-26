@@ -212,6 +212,6 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
 
     <a href=\"{{ path('commande_new') }}\">Create new</a>
 {% endblock %}
-", "commande/index.html.twig", "J:\\GitHub\\gestionStock\\templates\\commande\\index.html.twig");
+", "commande/index.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\index.html.twig");
     }
 }

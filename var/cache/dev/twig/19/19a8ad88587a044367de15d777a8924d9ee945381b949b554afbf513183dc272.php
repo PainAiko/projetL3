@@ -140,6 +140,6 @@ class __TwigTemplate_f1628b685feeb2a874703a4d471cd8e02de2ba7b1722ea5b077db555b7e
 
     {{ include('client/_delete_form.html.twig') }}
 {% endblock %}
-", "client/edit.html.twig", "J:\\GitHub\\gestionStock\\templates\\client\\edit.html.twig");
+", "client/edit.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\edit.html.twig");
     }
 }

@@ -84,6 +84,6 @@ class __TwigTemplate_6dc9ff9cf4e7e54280979cec35565a24b3aa8d13189a9ca6679eba71647
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "client/_form.html.twig", "J:\\GitHub\\gestionStock\\templates\\client\\_form.html.twig");
+", "client/_form.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\_form.html.twig");
     }
 }

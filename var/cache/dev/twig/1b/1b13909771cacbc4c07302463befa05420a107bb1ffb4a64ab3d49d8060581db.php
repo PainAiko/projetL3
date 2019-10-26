@@ -172,6 +172,6 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
 
     {{ include('commande/_delete_form.html.twig') }}
 {% endblock %}
-", "commande/show.html.twig", "J:\\GitHub\\gestionStock\\templates\\commande\\show.html.twig");
+", "commande/show.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\show.html.twig");
     }
 }

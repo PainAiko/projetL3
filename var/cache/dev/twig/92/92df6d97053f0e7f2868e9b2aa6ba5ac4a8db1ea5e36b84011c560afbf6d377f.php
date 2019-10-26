@@ -183,6 +183,6 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
 
     {{ include('client/_delete_form.html.twig') }}
 {% endblock %}
-", "client/show.html.twig", "J:\\GitHub\\gestionStock\\templates\\client\\show.html.twig");
+", "client/show.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\show.html.twig");
     }
 }

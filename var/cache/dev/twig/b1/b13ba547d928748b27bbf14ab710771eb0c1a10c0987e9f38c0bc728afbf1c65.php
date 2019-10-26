@@ -133,6 +133,6 @@ class __TwigTemplate_b16c1eb6e84d9d28c74671717950c05654206b1d8306447f4bcfeb0f99e
 
     <a href=\"{{ path('client_index') }}\">back to list</a>
 {% endblock %}
-", "client/new.html.twig", "J:\\GitHub\\gestionStock\\templates\\client\\new.html.twig");
+", "client/new.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\new.html.twig");
     }
 }

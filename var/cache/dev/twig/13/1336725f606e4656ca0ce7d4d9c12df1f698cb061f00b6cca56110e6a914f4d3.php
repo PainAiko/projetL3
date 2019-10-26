@@ -133,6 +133,6 @@ class __TwigTemplate_1d4661262d57ff22900afa03919b132f2b3a2dac1dcefd0ed0c9415457c
 
     <a href=\"{{ path('categorie_index') }}\">back to list</a>
 {% endblock %}
-", "categorie/new.html.twig", "J:\\GitHub\\gestionStock\\templates\\categorie\\new.html.twig");
+", "categorie/new.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\new.html.twig");
     }
 }
