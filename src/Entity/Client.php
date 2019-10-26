@@ -33,11 +33,7 @@ class Client
      */
     private $commandes;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Auth", inversedBy="client")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $auth;
+    
 
     public function __construct()
     {
@@ -104,15 +100,5 @@ class Client
         return $this;
     }
 
-    public function getAuth(): ?Auth
-    {
-        return $this->auth;
-    }
-
-    public function setAuth(?Auth $auth): self
-    {
-        $this->auth = $auth;
-
-        return $this;
-    }
+   
 }
