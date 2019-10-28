@@ -1148,3 +1148,7 @@
 [2019-10-28 20:27:23] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2019-10-28 20:27:24] doctrine.DEBUG: SELECT t0.id AS id_1, t0.nom AS nom_2, t0.adresse AS adresse_3 FROM client t0 [] []
 [2019-10-28 20:27:26] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"79bfc9"},"request_uri":"http://127.0.0.1:8000/_wdt/79bfc9","method":"GET"} []
+[2019-10-28 21:11:10] request.INFO: Matched route "client_edit". {"route":"client_edit","route_parameters":{"_route":"client_edit","_controller":"App\\Controller\\ClientController::edit","id":"3"},"request_uri":"http://127.0.0.1:8000/client/3/edit","method":"GET"} []
+[2019-10-28 21:11:10] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2019-10-28 21:11:11] doctrine.DEBUG: SELECT t0.id AS id_1, t0.nom AS nom_2, t0.adresse AS adresse_3 FROM client t0 WHERE t0.id = ? ["3"] []
+[2019-10-28 21:11:14] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"493f02"},"request_uri":"http://127.0.0.1:8000/_wdt/493f02","method":"GET"} []
