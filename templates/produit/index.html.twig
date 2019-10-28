@@ -12,6 +12,7 @@
                 <th>Libelle</th>
                 <th>Qte</th>
                 <th>Pu</th>
+                <th>Categorie</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,6 +23,7 @@
                 <td>{{ produit.libelle }}</td>
                 <td>{{ produit.qte }}</td>
                 <td>{{ produit.pu }}</td>
+                <td>{{produit.idCategorie.libelle }}</td>
                 <td>
                     <a href="{{ path('produit_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('produit_edit', {'id': produit.id}) }}">edit</a>

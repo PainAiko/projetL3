@@ -15,6 +15,10 @@
                 <th>DateComm</th>
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
             </tr>
+            <tr>
+                <th>Client</th>
+                <td>{{ commande.idClient.nom }}</td>
+            </tr>
         </tbody>
     </table>
 

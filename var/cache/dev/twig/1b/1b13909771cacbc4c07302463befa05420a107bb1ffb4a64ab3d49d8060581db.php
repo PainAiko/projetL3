@@ -103,21 +103,28 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         ((twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 16, $this->source); })()), "dateComm", [], "any", false, false, false, 16)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 16, $this->source); })()), "dateComm", [], "any", false, false, false, 16), "Y-m-d"), "html", null, true))) : (print ("")));
         echo "</td>
             </tr>
+            <tr>
+                <th>Client</th>
+                <td>";
+        // line 20
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 20, $this->source); })()), "idClient", [], "any", false, false, false, 20), "nom", [], "any", false, false, false, 20), "html", null, true);
+        echo "</td>
+            </tr>
         </tbody>
     </table>
 
     <a href=\"";
-        // line 21
+        // line 25
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index");
         echo "\">back to list</a>
 
     <a href=\"";
-        // line 23
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 23, $this->source); })()), "id", [], "any", false, false, false, 23)]), "html", null, true);
+        // line 27
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 27, $this->source); })()), "id", [], "any", false, false, false, 27)]), "html", null, true);
         echo "\">edit</a>
 
     ";
-        // line 25
+        // line 29
         echo twig_include($this->env, $context, "commande/_delete_form.html.twig");
         echo "
 ";
@@ -141,7 +148,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
 
     public function getDebugInfo()
     {
-        return array (  121 => 25,  116 => 23,  111 => 21,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  128 => 29,  123 => 27,  118 => 25,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -162,6 +169,10 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
             <tr>
                 <th>DateComm</th>
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Client</th>
+                <td>{{ commande.idClient.nom }}</td>
             </tr>
         </tbody>
     </table>
