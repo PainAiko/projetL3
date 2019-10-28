@@ -17,7 +17,7 @@ class ProduitType extends AbstractType
         $builder
             ->add('libelle',TextType::class,array('attr' =>array('class'=>'form-control')))
             ->add('qte',TextType::class,array('attr' =>array('class'=>'form-control')))
-            ->add('pu',TextType::class,array('attr' =>array('class'=>'form-control')))
+            ->add('pu',TextType::class,array('label' => 'Prix','attr' =>array('class'=>'form-control')))
         ->add('idCategorie',EntityType::Class,array('label' => 'Categorie','class' =>Categorie::Class,'choice_label'=>'libelle'))
         ;
     }
