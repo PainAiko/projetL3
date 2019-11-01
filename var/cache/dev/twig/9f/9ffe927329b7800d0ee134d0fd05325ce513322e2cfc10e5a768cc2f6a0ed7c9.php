@@ -61,11 +61,15 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
     <body>
         ";
         // line 12
-        $this->displayBlock('body', $context, $blocks);
+        echo twig_include($this->env, $context, "inc/navbar.html.twig");
+        echo "
+        ";
         // line 13
+        $this->displayBlock('body', $context, $blocks);
+        // line 14
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 14
+        // line 15
         echo "    </body>
 </html>
 ";
@@ -119,7 +123,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
     }
 
-    // line 12
+    // line 13
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -137,7 +141,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
     }
 
-    // line 13
+    // line 14
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -160,9 +164,14 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  141 => 13,  123 => 12,  110 => 8,  100 => 7,  81 => 5,  69 => 14,  66 => 13,  64 => 12,  60 => 10,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  145 => 14,  127 => 13,  114 => 8,  104 => 7,  85 => 5,  73 => 15,  70 => 14,  68 => 13,  64 => 12,  60 => 10,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -178,6 +187,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         {% endblock %}
     </head>
     <body>
+        {{ include('inc/navbar.html.twig') }}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
