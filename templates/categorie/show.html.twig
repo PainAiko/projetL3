@@ -8,7 +8,7 @@
     <table class="table">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th id="cat">Id</th>
                 <td>{{ categorie.id }}</td>
             </tr>
             <tr>
@@ -23,4 +23,10 @@
     <a href="{{ path('categorie_edit', {'id': categorie.id}) }}">edit</a>
 
     {{ include('categorie/_delete_form.html.twig') }}
+{% endblock %}
+ {% block javascripts %}
+            <script src="{{ asset('bootstrap/js/jquery.js') }}"></script>
+            <script >
+               alert(3);
+           </script>
 {% endblock %}
