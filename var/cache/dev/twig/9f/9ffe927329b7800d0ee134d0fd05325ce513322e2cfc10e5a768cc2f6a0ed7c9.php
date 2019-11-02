@@ -69,7 +69,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         // line 14
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 15
+        // line 17
         echo "    </body>
 </html>
 ";
@@ -151,6 +151,11 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
+        // line 15
+        echo "            <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("bootstrap/js/jquery.js"), "html", null, true);
+        echo "\"></script>
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -171,7 +176,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
     public function getDebugInfo()
     {
-        return array (  145 => 14,  127 => 13,  114 => 8,  104 => 7,  85 => 5,  73 => 15,  70 => 14,  68 => 13,  64 => 12,  60 => 10,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  155 => 15,  145 => 14,  127 => 13,  114 => 8,  104 => 7,  85 => 5,  73 => 17,  70 => 14,  68 => 13,  64 => 12,  60 => 10,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -189,7 +194,9 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
     <body>
         {{ include('inc/navbar.html.twig') }}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src=\"{{ asset('bootstrap/js/jquery.js') }}\"></script>
+        {% endblock %}
     </body>
 </html>
 ", "base.html.twig", "J:\\GitHub\\projetL3\\templates\\base.html.twig");
