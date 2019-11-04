@@ -48,7 +48,16 @@ class __TwigTemplate_de2c389e3f8c9973e0a27cf96d4b20074ab8da41af68eb3a4982da82493
         // line 3
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["categorie"]) || array_key_exists("categorie", $context) ? $context["categorie"] : (function () { throw new RuntimeError('Variable "categorie" does not exist.', 3, $this->source); })()), "id", [], "any", false, false, false, 3))), "html", null, true);
         echo "\">
-    <button class=\"btn\">Delete</button>
+    <button class=\"btn btn-info\">Supprimer</button>
+    <a role=\"button\" class=\"btn btn-danger\" href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["categorie"]) || array_key_exists("categorie", $context) ? $context["categorie"] : (function () { throw new RuntimeError('Variable "categorie" does not exist.', 5, $this->source); })()), "id", [], "any", false, false, false, 5)]), "html", null, true);
+        echo "\">
+    editer</a>
+    <a role=\"button\" class=\"btn btn-danger\" href=\"";
+        // line 7
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_index");
+        echo "\">Retour</a>
 </form>
 ";
         
@@ -71,7 +80,7 @@ class __TwigTemplate_de2c389e3f8c9973e0a27cf96d4b20074ab8da41af68eb3a4982da82493
 
     public function getDebugInfo()
     {
-        return array (  49 => 3,  43 => 1,);
+        return array (  59 => 7,  54 => 5,  49 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -79,7 +88,10 @@ class __TwigTemplate_de2c389e3f8c9973e0a27cf96d4b20074ab8da41af68eb3a4982da82493
         return new Source("<form method=\"post\" action=\"{{ path('categorie_delete', {'id': categorie.id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ categorie.id) }}\">
-    <button class=\"btn\">Delete</button>
+    <button class=\"btn btn-info\">Supprimer</button>
+    <a role=\"button\" class=\"btn btn-danger\" href=\"{{ path('categorie_edit', {'id': categorie.id}) }}\">
+    editer</a>
+    <a role=\"button\" class=\"btn btn-danger\" href=\"{{ path('categorie_index') }}\">Retour</a>
 </form>
 ", "categorie/_delete_form.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\_delete_form.html.twig");
     }

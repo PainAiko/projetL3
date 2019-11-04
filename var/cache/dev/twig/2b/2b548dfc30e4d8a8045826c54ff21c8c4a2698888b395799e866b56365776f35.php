@@ -85,7 +85,7 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Client index</h1>
+        echo "    <h1>LISTE DES CLIENTS</h1>
 
     <table class=\"table\">
         <thead>
@@ -128,7 +128,7 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
                      </a>
                     <a 
                     role=\"button\" 
-\t   \t\t\t\tclass=\"btn btn-primary edit-data\"
+\t   \t\t\t\tclass=\"btn btn-primary edit-data \"
                     href=\"";
             // line 32
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["client"], "id", [], "any", false, false, false, 32)]), "html", null, true);
@@ -162,7 +162,7 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
     <a href=\"";
         // line 47
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_new");
-        echo "\">Create new</a>
+        echo "\" role=\"button\" class=\"btn btn-success\">Nouveau</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -194,7 +194,7 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
 {% block title %}Client index{% endblock %}
 
 {% block body %}
-    <h1>Client index</h1>
+    <h1>LISTE DES CLIENTS</h1>
 
     <table class=\"table\">
         <thead>
@@ -219,7 +219,7 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
                      </a>
                     <a 
                     role=\"button\" 
-\t   \t\t\t\tclass=\"btn btn-primary edit-data\"
+\t   \t\t\t\tclass=\"btn btn-primary edit-data \"
                     href=\"{{ path('client_edit', {'id': client.id}) }}\">edit
                     </a>
                     <a role=\"button\" 
@@ -235,7 +235,7 @@ class __TwigTemplate_7990212b5f4b055e3a28de1bd80d27a40a8b1bc009786e2c4f17664677a
         </tbody>
     </table>
 
-    <a href=\"{{ path('client_new') }}\">Create new</a>
+    <a href=\"{{ path('client_new') }}\" role=\"button\" class=\"btn btn-success\">Nouveau</a>
 {% endblock %}
 ", "client/index.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\index.html.twig");
     }

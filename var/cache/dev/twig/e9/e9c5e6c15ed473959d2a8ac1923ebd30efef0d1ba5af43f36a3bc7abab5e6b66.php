@@ -46,13 +46,17 @@ class __TwigTemplate_bfa63f82403d2a9c1ebf1382a4a5ae6167be807f84c6f22833c22c2a6fa
         // line 2
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 2, $this->source); })()), 'widget');
         echo "
-    <button class=\"btn\">";
+    <button class=\"btn btn-info\">";
         // line 3
-        echo twig_escape_filter($this->env, (((isset($context["button_label"]) || array_key_exists("button_label", $context))) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 3, $this->source); })()), "Save")) : ("Save")), "html", null, true);
+        echo twig_escape_filter($this->env, (((isset($context["button_label"]) || array_key_exists("button_label", $context))) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 3, $this->source); })()), "Sauvegarder")) : ("Sauvegarder")), "html", null, true);
         echo "</button>
-";
+    <a role=\"button\" class=\"btn btn-danger\" href=\"";
         // line 4
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 4, $this->source); })()), 'form_end');
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_index");
+        echo "\">Annuler</a>
+";
+        // line 5
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 5, $this->source); })()), 'form_end');
         echo "
 ";
         
@@ -75,14 +79,15 @@ class __TwigTemplate_bfa63f82403d2a9c1ebf1382a4a5ae6167be807f84c6f22833c22c2a6fa
 
     public function getDebugInfo()
     {
-        return array (  55 => 4,  51 => 3,  47 => 2,  43 => 1,);
+        return array (  59 => 5,  55 => 4,  51 => 3,  47 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class=\"btn\">{{ button_label|default('Save') }}</button>
+    <button class=\"btn btn-info\">{{ button_label|default('Sauvegarder') }}</button>
+    <a role=\"button\" class=\"btn btn-danger\" href=\"{{ path('categorie_index') }}\">Annuler</a>
 {{ form_end(form) }}
 ", "categorie/_form.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\_form.html.twig");
     }

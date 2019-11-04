@@ -56,20 +56,20 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         ";
         // line 7
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 10
+        // line 12
         echo "    </head>
     <body>
         ";
-        // line 12
+        // line 14
         echo twig_include($this->env, $context, "inc/navbar.html.twig");
         echo "
         ";
-        // line 13
+        // line 15
         $this->displayBlock('body', $context, $blocks);
-        // line 14
+        // line 16
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 17
+        // line 19
         echo "    </body>
 </html>
 ";
@@ -112,8 +112,13 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
         // line 8
         echo "            <link rel=\"stylesheet\" href=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("bootstrap/css/bootstrap.min.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("bootstrap/css/bootstrap.css"), "html", null, true);
         echo "\">
+            <link rel=\"stylesheet\" href=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("bootstrap/css/fontawesome.css"), "html", null, true);
+        echo "\">
+           
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -123,7 +128,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
     }
 
-    // line 13
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -141,7 +146,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
     }
 
-    // line 14
+    // line 16
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -151,7 +156,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 15
+        // line 17
         echo "            <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("bootstrap/js/jquery.js"), "html", null, true);
         echo "\"></script>
@@ -176,7 +181,7 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
 
     public function getDebugInfo()
     {
-        return array (  155 => 15,  145 => 14,  127 => 13,  114 => 8,  104 => 7,  85 => 5,  73 => 17,  70 => 14,  68 => 13,  64 => 12,  60 => 10,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  160 => 17,  150 => 16,  132 => 15,  119 => 9,  114 => 8,  104 => 7,  85 => 5,  73 => 19,  70 => 16,  68 => 15,  64 => 14,  60 => 12,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -188,7 +193,9 @@ class __TwigTemplate_a86e112d10921dc41b9508e007c88acbfe1a70446024adfc6f6ac537b04
         <title>{% block title %}Welcome!{% endblock %}</title>
         
         {% block stylesheets %}
-            <link rel=\"stylesheet\" href=\"{{ asset('bootstrap/css/bootstrap.min.css') }}\">
+            <link rel=\"stylesheet\" href=\"{{ asset('bootstrap/css/bootstrap.css') }}\">
+            <link rel=\"stylesheet\" href=\"{{ asset('bootstrap/css/fontawesome.css') }}\">
+           
         {% endblock %}
     </head>
     <body>

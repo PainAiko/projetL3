@@ -85,7 +85,7 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Categorie</h1>
+        echo "    <h1>Detail de categorie</h1>
 
     <table class=\"table\">
         <tbody>
@@ -106,18 +106,10 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
         </tbody>
     </table>
 
-    <a href=\"";
-        // line 21
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_index");
-        echo "\">back to list</a>
-
-    <a href=\"";
-        // line 23
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["categorie"]) || array_key_exists("categorie", $context) ? $context["categorie"] : (function () { throw new RuntimeError('Variable "categorie" does not exist.', 23, $this->source); })()), "id", [], "any", false, false, false, 23)]), "html", null, true);
-        echo "\">edit</a>
+   
 
     ";
-        // line 25
+        // line 23
         echo twig_include($this->env, $context, "categorie/_delete_form.html.twig");
         echo "
 ";
@@ -141,7 +133,7 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
 
     public function getDebugInfo()
     {
-        return array (  121 => 25,  116 => 23,  111 => 21,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  113 => 23,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -151,7 +143,7 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
 {% block title %}Categorie{% endblock %}
 
 {% block body %}
-    <h1>Categorie</h1>
+    <h1>Detail de categorie</h1>
 
     <table class=\"table\">
         <tbody>
@@ -166,9 +158,7 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
         </tbody>
     </table>
 
-    <a href=\"{{ path('categorie_index') }}\">back to list</a>
-
-    <a href=\"{{ path('categorie_edit', {'id': categorie.id}) }}\">edit</a>
+   
 
     {{ include('categorie/_delete_form.html.twig') }}
 {% endblock %}

@@ -85,7 +85,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Categorie index</h1>
+        echo "    <h1>Liste des Categories </h1>
 
     <table class=\"table\">
         <thead>
@@ -114,21 +114,25 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "libelle", [], "any", false, false, false, 21), "html", null, true);
             echo "</td>
                 <td>
-                    <a href=\"";
+                    <a role=\"button\" class=\"btn btn-info\" href=\"";
             // line 23
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_show", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 23)]), "html", null, true);
-            echo "\">show</a>
-                    <a href=\"";
+            echo "\">details</a>
+                    <a role=\"button\" class=\"btn btn-info\"  href=\"";
             // line 24
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 24)]), "html", null, true);
-            echo "\">edit</a>
+            echo "\">editer</a>
+                    <a role=\"button\" class=\"btn btn-danger\"  href=\"";
+            // line 25
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["categorie"], "id", [], "any", false, false, false, 25)]), "html", null, true);
+            echo "\">supprimer</a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 28
+            // line 29
             echo "            <tr>
                 <td colspan=\"3\">no records found</td>
             </tr>
@@ -137,14 +141,14 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['categorie'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 33
         echo "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 35
+    <a role=\"button\" class=\"btn btn-info\" href=\"";
+        // line 36
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_new");
-        echo "\">Create new</a>
+        echo "\">Nouveau</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -166,7 +170,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
 
     public function getDebugInfo()
     {
-        return array (  146 => 35,  141 => 32,  132 => 28,  123 => 24,  119 => 23,  114 => 21,  110 => 20,  107 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  150 => 36,  145 => 33,  136 => 29,  127 => 25,  123 => 24,  119 => 23,  114 => 21,  110 => 20,  107 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -176,7 +180,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
 {% block title %}Categorie index{% endblock %}
 
 {% block body %}
-    <h1>Categorie index</h1>
+    <h1>Liste des Categories </h1>
 
     <table class=\"table\">
         <thead>
@@ -193,8 +197,9 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
                 <td>{{ categorie.id }}</td>
                 <td>{{ categorie.libelle }}</td>
                 <td>
-                    <a href=\"{{ path('categorie_show', {'id': categorie.id}) }}\">show</a>
-                    <a href=\"{{ path('categorie_edit', {'id': categorie.id}) }}\">edit</a>
+                    <a role=\"button\" class=\"btn btn-info\" href=\"{{ path('categorie_show', {'id': categorie.id}) }}\">details</a>
+                    <a role=\"button\" class=\"btn btn-info\"  href=\"{{ path('categorie_edit', {'id': categorie.id}) }}\">editer</a>
+                    <a role=\"button\" class=\"btn btn-danger\"  href=\"{{ path('categorie_delete', {'id': categorie.id}) }}\">supprimer</a>
                 </td>
             </tr>
         {% else %}
@@ -205,7 +210,7 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
         </tbody>
     </table>
 
-    <a href=\"{{ path('categorie_new') }}\">Create new</a>
+    <a role=\"button\" class=\"btn btn-info\" href=\"{{ path('categorie_new') }}\">Nouveau</a>
 {% endblock %}
 ", "categorie/index.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\index.html.twig");
     }

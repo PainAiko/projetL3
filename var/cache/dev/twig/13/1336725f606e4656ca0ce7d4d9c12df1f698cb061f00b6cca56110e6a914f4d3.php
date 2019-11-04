@@ -85,17 +85,14 @@ class __TwigTemplate_1d4661262d57ff22900afa03919b132f2b3a2dac1dcefd0ed0c9415457c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Create new Categorie</h1>
+        echo "    <h1>Nouveau Categorie</h1>
 
     ";
         // line 8
         echo twig_include($this->env, $context, "categorie/_form.html.twig");
         echo "
 
-    <a href=\"";
-        // line 10
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie_index");
-        echo "\">back to list</a>
+    
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -117,7 +114,7 @@ class __TwigTemplate_1d4661262d57ff22900afa03919b132f2b3a2dac1dcefd0ed0c9415457c
 
     public function getDebugInfo()
     {
-        return array (  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -127,11 +124,11 @@ class __TwigTemplate_1d4661262d57ff22900afa03919b132f2b3a2dac1dcefd0ed0c9415457c
 {% block title %}New Categorie{% endblock %}
 
 {% block body %}
-    <h1>Create new Categorie</h1>
+    <h1>Nouveau Categorie</h1>
 
     {{ include('categorie/_form.html.twig') }}
 
-    <a href=\"{{ path('categorie_index') }}\">back to list</a>
+    
 {% endblock %}
 ", "categorie/new.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\new.html.twig");
     }

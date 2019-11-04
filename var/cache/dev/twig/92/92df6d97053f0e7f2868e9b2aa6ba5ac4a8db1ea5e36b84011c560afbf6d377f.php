@@ -113,10 +113,7 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
         </tbody>
     </table>
 
-    <a href=\"";
-        // line 25
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_index");
-        echo "\">back to list</a>
+   
 
     <a href=\"";
         // line 27
@@ -148,7 +145,7 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
 
     public function getDebugInfo()
     {
-        return array (  128 => 29,  123 => 27,  118 => 25,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  125 => 29,  120 => 27,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -177,7 +174,7 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
         </tbody>
     </table>
 
-    <a href=\"{{ path('client_index') }}\">back to list</a>
+   
 
     <a href=\"{{ path('client_edit', {'id': client.id}) }}\">edit</a>
 
