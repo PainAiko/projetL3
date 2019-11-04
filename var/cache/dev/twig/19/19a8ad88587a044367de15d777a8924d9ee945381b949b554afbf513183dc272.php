@@ -85,22 +85,16 @@ class __TwigTemplate_f1628b685feeb2a874703a4d471cd8e02de2ba7b1722ea5b077db555b7e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Edit Client</h1>
+        echo "    <h1>Editer un Client</h1>
 
     ";
         // line 8
-        echo twig_include($this->env, $context, "client/_form.html.twig", ["button_label" => "Update"]);
+        echo twig_include($this->env, $context, "client/_form.html.twig", ["button_label" => "Modifier"]);
         echo "
 
-    <a href=\"";
-        // line 10
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_index");
-        echo "\">back to list</a>
+   
 
-    ";
-        // line 12
-        echo twig_include($this->env, $context, "client/_delete_form.html.twig");
-        echo "
+   
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -122,7 +116,7 @@ class __TwigTemplate_f1628b685feeb2a874703a4d471cd8e02de2ba7b1722ea5b077db555b7e
 
     public function getDebugInfo()
     {
-        return array (  102 => 12,  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -132,13 +126,13 @@ class __TwigTemplate_f1628b685feeb2a874703a4d471cd8e02de2ba7b1722ea5b077db555b7e
 {% block title %}Edit Client{% endblock %}
 
 {% block body %}
-    <h1>Edit Client</h1>
+    <h1>Editer un Client</h1>
 
-    {{ include('client/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('client/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    <a href=\"{{ path('client_index') }}\">back to list</a>
+   
 
-    {{ include('client/_delete_form.html.twig') }}
+   
 {% endblock %}
 ", "client/edit.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\edit.html.twig");
     }

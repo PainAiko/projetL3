@@ -48,7 +48,7 @@ class __TwigTemplate_6dc9ff9cf4e7e54280979cec35565a24b3aa8d13189a9ca6679eba71647
         echo "
     <button class=\"btn btn-primary \">";
         // line 3
-        echo twig_escape_filter($this->env, (((isset($context["button_label"]) || array_key_exists("button_label", $context))) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 3, $this->source); })()), "Save")) : ("Save")), "html", null, true);
+        echo twig_escape_filter($this->env, (((isset($context["button_label"]) || array_key_exists("button_label", $context))) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 3, $this->source); })()), "Ajouter")) : ("Ajouter")), "html", null, true);
         echo "</button>
 ";
         // line 4
@@ -82,7 +82,7 @@ class __TwigTemplate_6dc9ff9cf4e7e54280979cec35565a24b3aa8d13189a9ca6679eba71647
     {
         return new Source("{{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class=\"btn btn-primary \">{{ button_label|default('Save') }}</button>
+    <button class=\"btn btn-primary \">{{ button_label|default('Ajouter') }}</button>
 {{ form_end(form) }}
  ", "client/_form.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\_form.html.twig");
     }

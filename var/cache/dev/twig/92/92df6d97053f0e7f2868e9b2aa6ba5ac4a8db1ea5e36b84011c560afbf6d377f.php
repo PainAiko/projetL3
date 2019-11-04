@@ -117,13 +117,10 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
 
     <a href=\"";
         // line 27
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["client"]) || array_key_exists("client", $context) ? $context["client"] : (function () { throw new RuntimeError('Variable "client" does not exist.', 27, $this->source); })()), "id", [], "any", false, false, false, 27)]), "html", null, true);
-        echo "\">edit</a>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_index");
+        echo "\" role=\"button\" class=\"btn btn-info\">Retour</a>
 
-    ";
-        // line 29
-        echo twig_include($this->env, $context, "client/_delete_form.html.twig");
-        echo "
+  
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -145,7 +142,7 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
 
     public function getDebugInfo()
     {
-        return array (  125 => 29,  120 => 27,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  120 => 27,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -176,9 +173,9 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
 
    
 
-    <a href=\"{{ path('client_edit', {'id': client.id}) }}\">edit</a>
+    <a href=\"{{ path('client_index') }}\" role=\"button\" class=\"btn btn-info\">Retour</a>
 
-    {{ include('client/_delete_form.html.twig') }}
+  
 {% endblock %}
 ", "client/show.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\show.html.twig");
     }
