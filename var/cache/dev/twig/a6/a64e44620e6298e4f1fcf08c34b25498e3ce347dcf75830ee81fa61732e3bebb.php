@@ -85,7 +85,7 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Produit index</h1>
+        echo "    <h1>Produit </h1>
 
     <table class=\"table\">
         <thead>
@@ -128,21 +128,23 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["produit"], "idCategorie", [], "any", false, false, false, 26), "libelle", [], "any", false, false, false, 26), "html", null, true);
             echo "</td>
                 <td>
-                    <a href=\"";
+                    <a class=\"btn btn-info\" role=\"button\" href=\"";
             // line 28
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("produit_show", ["id" => twig_get_attribute($this->env, $this->source, $context["produit"], "id", [], "any", false, false, false, 28)]), "html", null, true);
-            echo "\">show</a>
-                    <a href=\"";
-            // line 29
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("produit_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["produit"], "id", [], "any", false, false, false, 29)]), "html", null, true);
-            echo "\">edit</a>
+            echo "\">
+                    Supprimer</a>
+                    <a class=\"btn btn-info\" role=\"button\" href=\"";
+            // line 30
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("produit_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["produit"], "id", [], "any", false, false, false, 30)]), "html", null, true);
+            echo "\">
+                    editer</a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 33
+            // line 35
             echo "            <tr>
                 <td colspan=\"5\">no records found</td>
             </tr>
@@ -151,14 +153,14 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['produit'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
+        // line 39
         echo "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 40
+    <a class=\"btn btn-success\" role=\"button\" href=\"";
+        // line 42
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("produit_new");
-        echo "\">Create new</a>
+        echo "\">Nouveau</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -180,7 +182,7 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
 
     public function getDebugInfo()
     {
-        return array (  160 => 40,  155 => 37,  146 => 33,  137 => 29,  133 => 28,  128 => 26,  124 => 25,  120 => 24,  116 => 23,  112 => 22,  109 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  162 => 42,  157 => 39,  148 => 35,  138 => 30,  133 => 28,  128 => 26,  124 => 25,  120 => 24,  116 => 23,  112 => 22,  109 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -190,7 +192,7 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
 {% block title %}Produit index{% endblock %}
 
 {% block body %}
-    <h1>Produit index</h1>
+    <h1>Produit </h1>
 
     <table class=\"table\">
         <thead>
@@ -212,8 +214,10 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
                 <td>{{ produit.pu }}</td>
                 <td>{{produit.idCategorie.libelle }}</td>
                 <td>
-                    <a href=\"{{ path('produit_show', {'id': produit.id}) }}\">show</a>
-                    <a href=\"{{ path('produit_edit', {'id': produit.id}) }}\">edit</a>
+                    <a class=\"btn btn-info\" role=\"button\" href=\"{{ path('produit_show', {'id': produit.id}) }}\">
+                    Supprimer</a>
+                    <a class=\"btn btn-info\" role=\"button\" href=\"{{ path('produit_edit', {'id': produit.id}) }}\">
+                    editer</a>
                 </td>
             </tr>
         {% else %}
@@ -224,7 +228,7 @@ class __TwigTemplate_47d12daa44293c5c6e70593e142b38aff7e23bb7f0a3c79c2495f6c1223
         </tbody>
     </table>
 
-    <a href=\"{{ path('produit_new') }}\">Create new</a>
+    <a class=\"btn btn-success\" role=\"button\" href=\"{{ path('produit_new') }}\">Nouveau</a>
 {% endblock %}
 ", "produit/index.html.twig", "J:\\GitHub\\projetL3\\templates\\produit\\index.html.twig");
     }

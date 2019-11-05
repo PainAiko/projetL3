@@ -48,8 +48,8 @@ class __TwigTemplate_8facacaefae0a9f4bf92105147a4a27c24d6ebe015a2940fcdc433e2eb6
         // line 3
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["client"]) || array_key_exists("client", $context) ? $context["client"] : (function () { throw new RuntimeError('Variable "client" does not exist.', 3, $this->source); })()), "id", [], "any", false, false, false, 3))), "html", null, true);
         echo "\">
-    <button class=\"btn btn-warning\">Delete</button>
-     <a class=\"btn btn-danger\" href=\"";
+    <button class=\"btn btn-info\">Delete</button>
+     <a class=\"btn btn-danger\" role=\"button\" href=\"";
         // line 5
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_index");
         echo "\">Retour</a>
@@ -83,8 +83,8 @@ class __TwigTemplate_8facacaefae0a9f4bf92105147a4a27c24d6ebe015a2940fcdc433e2eb6
         return new Source("<form method=\"post\" action=\"{{ path('client_delete', {'id': client.id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ client.id) }}\">
-    <button class=\"btn btn-warning\">Delete</button>
-     <a class=\"btn btn-danger\" href=\"{{ path('client_index') }}\">Retour</a>
+    <button class=\"btn btn-info\">Delete</button>
+     <a class=\"btn btn-danger\" role=\"button\" href=\"{{ path('client_index') }}\">Retour</a>
 </form>
 ", "client/_delete_form.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\_delete_form.html.twig");
     }

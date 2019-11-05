@@ -113,13 +113,10 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
         </tbody>
     </table>
 
-   
-
-    <a href=\"";
-        // line 27
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_index");
-        echo "\" role=\"button\" class=\"btn btn-info\">Retour</a>
-
+     ";
+        // line 25
+        echo twig_include($this->env, $context, "client/_delete_form.html.twig");
+        echo "
   
 ";
         
@@ -142,7 +139,7 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
 
     public function getDebugInfo()
     {
-        return array (  120 => 27,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  118 => 25,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -171,10 +168,7 @@ class __TwigTemplate_d5a78fe467c2d2c415162f942da3482e3e51d5d6c8e1e5f1230894d13ff
         </tbody>
     </table>
 
-   
-
-    <a href=\"{{ path('client_index') }}\" role=\"button\" class=\"btn btn-info\">Retour</a>
-
+     {{ include('client/_delete_form.html.twig') }}
   
 {% endblock %}
 ", "client/show.html.twig", "J:\\GitHub\\projetL3\\templates\\client\\show.html.twig");

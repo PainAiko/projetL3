@@ -3,7 +3,7 @@
 {% block title %}Produit index{% endblock %}
 
 {% block body %}
-    <h1>Produit index</h1>
+    <h1>Produit </h1>
 
     <table class="table">
         <thead>
@@ -25,8 +25,10 @@
                 <td>{{ produit.pu }}</td>
                 <td>{{produit.idCategorie.libelle }}</td>
                 <td>
-                    <a href="{{ path('produit_show', {'id': produit.id}) }}">show</a>
-                    <a href="{{ path('produit_edit', {'id': produit.id}) }}">edit</a>
+                    <a class="btn btn-info" role="button" href="{{ path('produit_show', {'id': produit.id}) }}">
+                    Supprimer</a>
+                    <a class="btn btn-info" role="button" href="{{ path('produit_edit', {'id': produit.id}) }}">
+                    editer</a>
                 </td>
             </tr>
         {% else %}
@@ -37,5 +39,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('produit_new') }}">Create new</a>
+    <a class="btn btn-success" role="button" href="{{ path('produit_new') }}">Nouveau</a>
 {% endblock %}
