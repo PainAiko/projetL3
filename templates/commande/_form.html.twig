@@ -1,4 +1,7 @@
 {{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <button class="btn btn-info">{{ button_label|default('Sauver') }}</button>
+    <a class="btn btn-warning"
+    role="button"
+     href="{{ path('commande_index') }}">Retour</a>
 {{ form_end(form) }}

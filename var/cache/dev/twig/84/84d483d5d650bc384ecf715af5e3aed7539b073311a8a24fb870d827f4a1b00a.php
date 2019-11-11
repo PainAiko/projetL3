@@ -85,17 +85,13 @@ class __TwigTemplate_1bc06e372afa1704eebc83f3ec7f214e74959453c975ab7e51cc1d14c19
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Create new Commande</h1>
+        echo "    <h1>Ajout de commande</h1>
 
     ";
         // line 8
         echo twig_include($this->env, $context, "commande/_form.html.twig");
         echo "
 
-    <a href=\"";
-        // line 10
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index");
-        echo "\">back to list</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -117,7 +113,7 @@ class __TwigTemplate_1bc06e372afa1704eebc83f3ec7f214e74959453c975ab7e51cc1d14c19
 
     public function getDebugInfo()
     {
-        return array (  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -127,11 +123,10 @@ class __TwigTemplate_1bc06e372afa1704eebc83f3ec7f214e74959453c975ab7e51cc1d14c19
 {% block title %}New Commande{% endblock %}
 
 {% block body %}
-    <h1>Create new Commande</h1>
+    <h1>Ajout de commande</h1>
 
     {{ include('commande/_form.html.twig') }}
 
-    <a href=\"{{ path('commande_index') }}\">back to list</a>
 {% endblock %}
 ", "commande/new.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\new.html.twig");
     }

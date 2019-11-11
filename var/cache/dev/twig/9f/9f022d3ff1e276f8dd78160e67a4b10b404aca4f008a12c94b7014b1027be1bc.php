@@ -85,7 +85,7 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Commande index</h1>
+        echo "    <h1>Liste commande</h1>
 
     <table class=\"table\">
         <thead>
@@ -118,13 +118,19 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["commande"], "idClient", [], "any", false, false, false, 22), "nom", [], "any", false, false, false, 22), "html", null, true);
             echo "</td>
                 <td>
-                    <a href=\"";
-            // line 24
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_show", ["id" => twig_get_attribute($this->env, $this->source, $context["commande"], "id", [], "any", false, false, false, 24)]), "html", null, true);
+                    <a
+                     role=\"button\" 
+\t   \t\t\t\t class=\"btn btn-primary edit-data\"
+                     href=\"";
+            // line 27
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_show", ["id" => twig_get_attribute($this->env, $this->source, $context["commande"], "id", [], "any", false, false, false, 27)]), "html", null, true);
             echo "\">show</a>
-                    <a href=\"";
-            // line 25
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["commande"], "id", [], "any", false, false, false, 25)]), "html", null, true);
+                    <a 
+                      role=\"button\" 
+\t   \t\t\t\t class=\"btn btn-primary edit-data\"
+                    href=\"";
+            // line 31
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["commande"], "id", [], "any", false, false, false, 31)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -132,7 +138,7 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 29
+            // line 35
             echo "            <tr>
                 <td colspan=\"3\">no records found</td>
             </tr>
@@ -141,12 +147,13 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commande'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 39
         echo "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 36
+    <a  role=\"button\" 
+\t   \t\t\t\t class=\"btn btn-success edit-data\" href=\"";
+        // line 43
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_new");
         echo "\">Create new</a>
 ";
@@ -170,7 +177,7 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
 
     public function getDebugInfo()
     {
-        return array (  150 => 36,  145 => 33,  136 => 29,  127 => 25,  123 => 24,  118 => 22,  114 => 21,  110 => 20,  107 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  157 => 43,  151 => 39,  142 => 35,  133 => 31,  126 => 27,  118 => 22,  114 => 21,  110 => 20,  107 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -180,7 +187,7 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
 {% block title %}Commande index{% endblock %}
 
 {% block body %}
-    <h1>Commande index</h1>
+    <h1>Liste commande</h1>
 
     <table class=\"table\">
         <thead>
@@ -198,8 +205,14 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
                 <td>{{ commande.idClient.nom }}</td>
                 <td>
-                    <a href=\"{{ path('commande_show', {'id': commande.id}) }}\">show</a>
-                    <a href=\"{{ path('commande_edit', {'id': commande.id}) }}\">edit</a>
+                    <a
+                     role=\"button\" 
+\t   \t\t\t\t class=\"btn btn-primary edit-data\"
+                     href=\"{{ path('commande_show', {'id': commande.id}) }}\">show</a>
+                    <a 
+                      role=\"button\" 
+\t   \t\t\t\t class=\"btn btn-primary edit-data\"
+                    href=\"{{ path('commande_edit', {'id': commande.id}) }}\">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -210,7 +223,8 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         </tbody>
     </table>
 
-    <a href=\"{{ path('commande_new') }}\">Create new</a>
+    <a  role=\"button\" 
+\t   \t\t\t\t class=\"btn btn-success edit-data\" href=\"{{ path('commande_new') }}\">Create new</a>
 {% endblock %}
 ", "commande/index.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\index.html.twig");
     }

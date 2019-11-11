@@ -48,7 +48,7 @@ class __TwigTemplate_6f4e4aeb9044f90e287f7660caff2af6a66aa7335c0903669538e18f679
         // line 3
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 3, $this->source); })()), "id", [], "any", false, false, false, 3))), "html", null, true);
         echo "\">
-    <button class=\"btn\">Delete</button>
+    <button class=\"btn btn-danger\">Delete</button>
 </form>
 ";
         
@@ -79,7 +79,7 @@ class __TwigTemplate_6f4e4aeb9044f90e287f7660caff2af6a66aa7335c0903669538e18f679
         return new Source("<form method=\"post\" action=\"{{ path('commande_delete', {'id': commande.id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ commande.id) }}\">
-    <button class=\"btn\">Delete</button>
+    <button class=\"btn btn-danger\">Delete</button>
 </form>
 ", "commande/_delete_form.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\_delete_form.html.twig");
     }
