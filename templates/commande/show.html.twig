@@ -16,13 +16,21 @@
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
             </tr>
             <tr>
-                <th>Client</th>
+                <th id="ide">Client</th>
                 <td>{{ commande.idClient.nom }}</td>
             </tr>
         </tbody>
     </table>
 
-    
+     
 
     {{ include('commande/_delete_form.html.twig') }}
-{% endblock %}
+    <script >
+              $(document).ready(function ()
+               {
+                   alert(12);
+               });
+    </script>
+{% endblock %}            
+            
+            

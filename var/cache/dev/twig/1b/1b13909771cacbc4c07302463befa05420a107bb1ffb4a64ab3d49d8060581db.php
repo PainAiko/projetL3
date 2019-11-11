@@ -104,7 +104,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         echo "</td>
             </tr>
             <tr>
-                <th>Client</th>
+                <th id=\"ide\">Client</th>
                 <td>";
         // line 20
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 20, $this->source); })()), "idClient", [], "any", false, false, false, 20), "nom", [], "any", false, false, false, 20), "html", null, true);
@@ -113,12 +113,18 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         </tbody>
     </table>
 
-    
+     
 
     ";
         // line 27
         echo twig_include($this->env, $context, "commande/_delete_form.html.twig");
         echo "
+    <script >
+              \$(document).ready(function ()
+               {
+                   alert(12);
+               });
+    </script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -163,16 +169,24 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
             </tr>
             <tr>
-                <th>Client</th>
+                <th id=\"ide\">Client</th>
                 <td>{{ commande.idClient.nom }}</td>
             </tr>
         </tbody>
     </table>
 
-    
+     
 
     {{ include('commande/_delete_form.html.twig') }}
-{% endblock %}
+    <script >
+              \$(document).ready(function ()
+               {
+                   alert(12);
+               });
+    </script>
+{% endblock %}            
+            
+            
 ", "commande/show.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\show.html.twig");
     }
 }
