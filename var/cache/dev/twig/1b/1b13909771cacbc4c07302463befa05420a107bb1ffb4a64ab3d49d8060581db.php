@@ -85,7 +85,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Suppression Commande</h1>
+        echo "    <h1>Commande</h1>
 
     <table class=\"table\">
         <tbody>
@@ -97,7 +97,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         echo "</td>
             </tr>
             <tr>
-                <th>Date</th>
+                <th>DateComm</th>
                 <td>";
         // line 16
         ((twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 16, $this->source); })()), "dateComm", [], "any", false, false, false, 16)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 16, $this->source); })()), "dateComm", [], "any", false, false, false, 16), "Y-m-d"), "html", null, true))) : (print ("")));
@@ -113,10 +113,22 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         </tbody>
     </table>
 
+<<<<<<< HEAD
      
+=======
+    <a href=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index");
+        echo "\">back to list</a>
+>>>>>>> parent of d792a0f... update
+
+    <a href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 27, $this->source); })()), "id", [], "any", false, false, false, 27)]), "html", null, true);
+        echo "\">edit</a>
 
     ";
-        // line 27
+        // line 29
         echo twig_include($this->env, $context, "commande/_delete_form.html.twig");
         echo "
     <script >
@@ -146,7 +158,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
 
     public function getDebugInfo()
     {
-        return array (  120 => 27,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  128 => 29,  123 => 27,  118 => 25,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -156,7 +168,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
 {% block title %}Commande{% endblock %}
 
 {% block body %}
-    <h1>Suppression Commande</h1>
+    <h1>Commande</h1>
 
     <table class=\"table\">
         <tbody>
@@ -165,7 +177,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
                 <td>{{ commande.id }}</td>
             </tr>
             <tr>
-                <th>Date</th>
+                <th>DateComm</th>
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
             </tr>
             <tr>
@@ -175,7 +187,13 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
         </tbody>
     </table>
 
+<<<<<<< HEAD
      
+=======
+    <a href=\"{{ path('commande_index') }}\">back to list</a>
+
+    <a href=\"{{ path('commande_edit', {'id': commande.id}) }}\">edit</a>
+>>>>>>> parent of d792a0f... update
 
     {{ include('commande/_delete_form.html.twig') }}
     <script >

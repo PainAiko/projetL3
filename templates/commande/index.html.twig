@@ -3,7 +3,7 @@
 {% block title %}Commande index{% endblock %}
 
 {% block body %}
-    <h1>Liste commande</h1>
+    <h1>Commande index</h1>
 
     <table class="table">
         <thead>
@@ -21,14 +21,8 @@
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
                 <td>{{ commande.idClient.nom }}</td>
                 <td>
-                    <a
-                     role="button" 
-	   				 class="btn btn-primary edit-data"
-                     href="{{ path('commande_show', {'id': commande.id}) }}">show</a>
-                    <a 
-                      role="button" 
-	   				 class="btn btn-primary edit-data"
-                    href="{{ path('commande_edit', {'id': commande.id}) }}">edit</a>
+                    <a href="{{ path('commande_show', {'id': commande.id}) }}">show</a>
+                    <a href="{{ path('commande_edit', {'id': commande.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -39,6 +33,5 @@
         </tbody>
     </table>
 
-    <a  role="button" 
-	   	class="btn btn-success edit-data" href="{{ path('commande_new') }}">Create new</a>
+    <a href="{{ path('commande_new') }}">Create new</a>
 {% endblock %}

@@ -3,7 +3,7 @@
 {% block title %}Commande{% endblock %}
 
 {% block body %}
-    <h1>Suppression Commande</h1>
+    <h1>Commande</h1>
 
     <table class="table">
         <tbody>
@@ -12,7 +12,7 @@
                 <td>{{ commande.id }}</td>
             </tr>
             <tr>
-                <th>Date</th>
+                <th>DateComm</th>
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
             </tr>
             <tr>
@@ -22,7 +22,13 @@
         </tbody>
     </table>
 
+<<<<<<< HEAD
      
+=======
+    <a href="{{ path('commande_index') }}">back to list</a>
+
+    <a href="{{ path('commande_edit', {'id': commande.id}) }}">edit</a>
+>>>>>>> parent of d792a0f... update
 
     {{ include('commande/_delete_form.html.twig') }}
     <script >

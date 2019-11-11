@@ -3,8 +3,9 @@
 {% block title %}New Commande{% endblock %}
 
 {% block body %}
-    <h1>Ajout de commande</h1>
+    <h1>Create new Commande</h1>
 
     {{ include('commande/_form.html.twig') }}
 
+    <a href="{{ path('commande_index') }}">back to list</a>
 {% endblock %}
