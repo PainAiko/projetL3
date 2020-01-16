@@ -91,8 +91,8 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         <thead>
             <tr>
                 <th>Code</th>
-                <th>Client</th>
                 <th>Date de commande</th>
+                <th>Client</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -186,8 +186,8 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         <thead>
             <tr>
                 <th>Code</th>
-                <th>Client</th>
                 <th>Date de commande</th>
+                <th>Client</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -212,6 +212,6 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
 
     <a href=\"{{ path('commande_new') }}\">Create new</a>
 {% endblock %}
-", "commande/index.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\index.html.twig");
+", "commande/index.html.twig", "D:\\DEV\\GitHub\\projetL3\\templates\\commande\\index.html.twig");
     }
 }
