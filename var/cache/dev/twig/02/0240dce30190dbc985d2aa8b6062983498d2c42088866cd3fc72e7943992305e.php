@@ -90,8 +90,8 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
     <table class=\"table\">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Libelle</th>
+                <th>code</th>
+                <th>nom</th>
                 
                 <th>actions</th>
             </tr>
@@ -185,8 +185,8 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
     <table class=\"table\">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Libelle</th>
+                <th>code</th>
+                <th>nom</th>
                 
                 <th>actions</th>
             </tr>
@@ -212,6 +212,6 @@ class __TwigTemplate_0dcaf3b4e5b2c521b6d427be10b6ffa0719475ab2c6411ed8c511b4e2a0
 
     <a role=\"button\" class=\"btn btn-info\" href=\"{{ path('categorie_new') }}\">Nouveau</a>
 {% endblock %}
-", "categorie/index.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\index.html.twig");
+", "categorie/index.html.twig", "D:\\DEV\\GitHub\\projetL3\\templates\\categorie\\index.html.twig");
     }
 }
