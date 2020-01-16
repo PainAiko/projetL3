@@ -3,8 +3,8 @@
 {% block title %}Commande index{% endblock %}
 
 {% block body %}
-    <h1>Commande index</h1>
-
+    <h2>liste des commandes</h2>
+     
     <table class="table">
         <thead>
             <tr>
@@ -21,8 +21,8 @@
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
                 <td>{{ commande.idClient.nom }}</td>
                 <td>
-                    <a href="{{ path('commande_show', {'id': commande.id}) }}">show</a>
-                    <a href="{{ path('commande_edit', {'id': commande.id}) }}">edit</a>
+                    <a href="{{ path('commande_show', {'id': commande.id}) }}" role="button" class="btn btn-info">Supprimer</a>
+                    <a href="{{ path('commande_edit', {'id': commande.id}) }}" role="button" class="btn btn-info">editer</a>
                 </td>
             </tr>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('commande_new') }}">Create new</a>
+    <a href="{{ path('commande_new') }}" role="button" class="btn btn-info">Nouveau</a>
 {% endblock %}

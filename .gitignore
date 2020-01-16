@@ -25,3 +25,5 @@ var/cache/dev/profiler/index.csv
 var/log/dev.log
 var/cache/dev/profiler/index.csv
 var/log/dev.log
+var/log/dev.log
+var/cache/dev/profiler/index.csv

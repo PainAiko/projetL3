@@ -85,8 +85,8 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Commande index</h1>
-
+        echo "    <h2>liste des commandes</h2>
+     
     <table class=\"table\">
         <thead>
             <tr>
@@ -121,11 +121,11 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
                     <a href=\"";
             // line 24
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_show", ["id" => twig_get_attribute($this->env, $this->source, $context["commande"], "id", [], "any", false, false, false, 24)]), "html", null, true);
-            echo "\">show</a>
+            echo "\" role=\"button\" class=\"btn btn-info\">Supprimer</a>
                     <a href=\"";
             // line 25
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["commande"], "id", [], "any", false, false, false, 25)]), "html", null, true);
-            echo "\">edit</a>
+            echo "\" role=\"button\" class=\"btn btn-info\">editer</a>
                 </td>
             </tr>
         ";
@@ -148,7 +148,7 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
     <a href=\"";
         // line 36
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_new");
-        echo "\">Create new</a>
+        echo "\" role=\"button\" class=\"btn btn-info\">Nouveau</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -180,8 +180,8 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
 {% block title %}Commande index{% endblock %}
 
 {% block body %}
-    <h1>Commande index</h1>
-
+    <h2>liste des commandes</h2>
+     
     <table class=\"table\">
         <thead>
             <tr>
@@ -198,8 +198,8 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
                 <td>{{ commande.dateComm ? commande.dateComm|date('Y-m-d') : '' }}</td>
                 <td>{{ commande.idClient.nom }}</td>
                 <td>
-                    <a href=\"{{ path('commande_show', {'id': commande.id}) }}\">show</a>
-                    <a href=\"{{ path('commande_edit', {'id': commande.id}) }}\">edit</a>
+                    <a href=\"{{ path('commande_show', {'id': commande.id}) }}\" role=\"button\" class=\"btn btn-info\">Supprimer</a>
+                    <a href=\"{{ path('commande_edit', {'id': commande.id}) }}\" role=\"button\" class=\"btn btn-info\">editer</a>
                 </td>
             </tr>
         {% else %}
@@ -210,7 +210,7 @@ class __TwigTemplate_9fdd3445a529459d2413b88d024756cca134bc5d7dbda5ff478a0d6b823
         </tbody>
     </table>
 
-    <a href=\"{{ path('commande_new') }}\">Create new</a>
+    <a href=\"{{ path('commande_new') }}\" role=\"button\" class=\"btn btn-info\">Nouveau</a>
 {% endblock %}
 ", "commande/index.html.twig", "D:\\DEV\\GitHub\\projetL3\\templates\\commande\\index.html.twig");
     }

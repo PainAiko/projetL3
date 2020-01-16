@@ -85,21 +85,11 @@ class __TwigTemplate_5147789753cd4a618d867083f4165300bf44f6b3eed784b6e4336a84737
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Edit Commande</h1>
+        echo "    <h2>modification d'un commande</h2>
 
     ";
         // line 8
         echo twig_include($this->env, $context, "commande/_form.html.twig", ["button_label" => "Update"]);
-        echo "
-
-    <a href=\"";
-        // line 10
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index");
-        echo "\">back to list</a>
-
-    ";
-        // line 12
-        echo twig_include($this->env, $context, "commande/_delete_form.html.twig");
         echo "
 ";
         
@@ -122,7 +112,7 @@ class __TwigTemplate_5147789753cd4a618d867083f4165300bf44f6b3eed784b6e4336a84737
 
     public function getDebugInfo()
     {
-        return array (  102 => 12,  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -132,14 +122,10 @@ class __TwigTemplate_5147789753cd4a618d867083f4165300bf44f6b3eed784b6e4336a84737
 {% block title %}Edit Commande{% endblock %}
 
 {% block body %}
-    <h1>Edit Commande</h1>
+    <h2>modification d'un commande</h2>
 
     {{ include('commande/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href=\"{{ path('commande_index') }}\">back to list</a>
-
-    {{ include('commande/_delete_form.html.twig') }}
 {% endblock %}
-", "commande/edit.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\edit.html.twig");
+", "commande/edit.html.twig", "D:\\DEV\\GitHub\\projetL3\\templates\\commande\\edit.html.twig");
     }
 }
