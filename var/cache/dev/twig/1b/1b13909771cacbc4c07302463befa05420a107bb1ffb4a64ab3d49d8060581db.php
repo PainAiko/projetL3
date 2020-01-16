@@ -117,18 +117,18 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
      
 =======
     <a href=\"";
-        // line 25
+        // line 28
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_index");
         echo "\">back to list</a>
->>>>>>> parent of d792a0f... update
 
     <a href=\"";
-        // line 27
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 27, $this->source); })()), "id", [], "any", false, false, false, 27)]), "html", null, true);
+        // line 30
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("commande_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["commande"]) || array_key_exists("commande", $context) ? $context["commande"] : (function () { throw new RuntimeError('Variable "commande" does not exist.', 30, $this->source); })()), "id", [], "any", false, false, false, 30)]), "html", null, true);
         echo "\">edit</a>
+>>>>>>> parent of d792a0f... update
 
     ";
-        // line 29
+        // line 33
         echo twig_include($this->env, $context, "commande/_delete_form.html.twig");
         echo "
     <script >
@@ -158,7 +158,7 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
 
     public function getDebugInfo()
     {
-        return array (  128 => 29,  123 => 27,  118 => 25,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  132 => 33,  126 => 30,  121 => 28,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -205,6 +205,6 @@ class __TwigTemplate_845d939986277e3e394c43b7d952dd0d673725616be93c18ec4afb20b1e
 {% endblock %}            
             
             
-", "commande/show.html.twig", "J:\\GitHub\\projetL3\\templates\\commande\\show.html.twig");
+", "commande/show.html.twig", "D:\\DEV\\GitHub\\projetL3\\templates\\commande\\show.html.twig");
     }
 }
