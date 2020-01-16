@@ -375,3 +375,7 @@ ed8713,127.0.0.1,POST,http://localhost:8000/categorie/new,1579200099,,302
 503fc4,127.0.0.1,GET,http://localhost:8000/categorie/,1579200802,,200
 eb3a20,127.0.0.1,GET,http://localhost:8000/categorie/,1579200834,,200
 3129a5,127.0.0.1,GET,http://localhost:8000/categorie/new,1579201274,,200
+958ba7,127.0.0.1,POST,http://localhost:8000/produit/1/edit,1579205782,,302
+907e59,127.0.0.1,GET,http://localhost:8000/produit/,1579205783,,200
+7e9ffe,127.0.0.1,GET,http://localhost:8000/produit/1,1579205789,,200
+deb08a,127.0.0.1,GET,http://localhost:8000/produit/1,1579206091,,200
