@@ -2622,3 +2622,8 @@
 [2020-01-16 20:21:31] doctrine.DEBUG: SELECT t0.id AS id_1, t0.libelle AS libelle_2, t0.qte AS qte_3, t0.pu AS pu_4, t0.id_categorie_id AS id_categorie_id_5 FROM produit t0 WHERE t0.id = ? ["1"] []
 [2020-01-16 20:21:31] doctrine.DEBUG: SELECT t0.id AS id_1, t0.libelle AS libelle_2 FROM categorie t0 WHERE t0.id = ? [2] []
 [2020-01-16 20:21:32] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"deb08a"},"request_uri":"http://localhost:8000/_wdt/deb08a","method":"GET"} []
+[2020-01-16 20:24:56] request.INFO: Matched route "produit_show". {"route":"produit_show","route_parameters":{"_route":"produit_show","_controller":"App\\Controller\\ProduitController::show","id":"1"},"request_uri":"http://localhost:8000/produit/1","method":"GET"} []
+[2020-01-16 20:24:56] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2020-01-16 20:24:56] doctrine.DEBUG: SELECT t0.id AS id_1, t0.libelle AS libelle_2, t0.qte AS qte_3, t0.pu AS pu_4, t0.id_categorie_id AS id_categorie_id_5 FROM produit t0 WHERE t0.id = ? ["1"] []
+[2020-01-16 20:24:56] doctrine.DEBUG: SELECT t0.id AS id_1, t0.libelle AS libelle_2 FROM categorie t0 WHERE t0.id = ? [2] []
+[2020-01-16 20:24:57] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"8902c2"},"request_uri":"http://localhost:8000/_wdt/8902c2","method":"GET"} []
