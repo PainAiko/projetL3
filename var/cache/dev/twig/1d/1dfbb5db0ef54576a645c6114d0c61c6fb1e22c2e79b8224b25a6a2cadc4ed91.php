@@ -90,14 +90,14 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
     <table class=\"table\">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>Code</th>
                 <td>";
         // line 12
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["categorie"]) || array_key_exists("categorie", $context) ? $context["categorie"] : (function () { throw new RuntimeError('Variable "categorie" does not exist.', 12, $this->source); })()), "id", [], "any", false, false, false, 12), "html", null, true);
         echo "</td>
             </tr>
             <tr>
-                <th>Libelle</th>
+                <th>nom</th>
                 <td>";
         // line 16
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["categorie"]) || array_key_exists("categorie", $context) ? $context["categorie"] : (function () { throw new RuntimeError('Variable "categorie" does not exist.', 16, $this->source); })()), "libelle", [], "any", false, false, false, 16), "html", null, true);
@@ -148,11 +148,11 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
     <table class=\"table\">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>Code</th>
                 <td>{{ categorie.id }}</td>
             </tr>
             <tr>
-                <th>Libelle</th>
+                <th>nom</th>
                 <td>{{ categorie.libelle }}</td>
             </tr>
         </tbody>
@@ -162,6 +162,6 @@ class __TwigTemplate_1d2620dd55e5f8ccff296ec7fffeaab55089040521a9c8a1f9e8a09afb7
 
     {{ include('categorie/_delete_form.html.twig') }}
 {% endblock %}
-", "categorie/show.html.twig", "J:\\GitHub\\projetL3\\templates\\categorie\\show.html.twig");
+", "categorie/show.html.twig", "D:\\DEV\\GitHub\\projetL3\\templates\\categorie\\show.html.twig");
     }
 }
